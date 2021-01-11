@@ -57,7 +57,7 @@ function writePassword() {
       
     }
       
-    var userInputSpecialCharacters = confirm("Do you want your password to contain any special characters?"");
+    var userInputSpecialCharacters = confirm("Do you want your password to contain any special characters?");
 
     if (userInputSpecialCharacters) {
 
@@ -70,6 +70,7 @@ function writePassword() {
 
   passwordText.value = password;
 
+}
 }
 
 // Add event listener to generate button
