@@ -4,6 +4,17 @@ var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// Creates the password for the #password input
+function writePassword() {
+
+  var password = generatePassword();
+
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
 // Below are the four different options/arrays that the visitor can choose to be in their password
 
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -11,12 +22,11 @@ var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
 var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 
-// Write password to the #password input
 // Stores the characters that the user inputs
 var userInput = [];
 
 
-function writePassword() {
+function generatePassword() {
   
   // Asks how long the user's password will be and then adds the password to the input
   var userLength = prompt("Please choose desired length of your password (must be between 8 and 128)");
@@ -28,7 +38,7 @@ function writePassword() {
   if (Number.isNaN(userLengthParseInt) || userLength < 8 || userLength > 128) {
 
     alert("Not a valid length! Please input a number between 8 and 128.")
-    return password = "";
+    return userPassword = "";
 
   }
 
@@ -68,17 +78,9 @@ function writePassword() {
       console.log(userInputSpecialCharacters);
 
     }
- //var password = generatePassword();
- var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
 
 }
 }
 
-
-
-// Start working code
-// User input variables:
-  
 
