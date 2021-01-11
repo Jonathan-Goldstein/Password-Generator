@@ -40,6 +40,13 @@ function writePassword() {
      
 
     }
+   
+    var userInputUpperCase = confirm("Do you want your password to contain upper case letters?"");
+
+    if (userInputUpperCase) {
+
+      userInput = userInput.concat(upperCase);
+  
 }
  //var password = generatePassword();
  var passwordText = document.querySelector("#password");
