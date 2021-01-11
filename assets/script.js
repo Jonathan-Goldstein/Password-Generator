@@ -13,7 +13,7 @@ function writePassword() {
  
  var userLength = prompt("Please choose desired length of your password (must be between 8 and 128)");
  
- console.log(userLength):
+ console.log(userLength);
  
  //prompts the user to input a length in between 8 and 128 if they enter a length that is greater or lesser than the required input
  if (userLength < 8) {
