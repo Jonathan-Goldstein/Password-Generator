@@ -48,13 +48,22 @@ function writePassword() {
   
     }
       
-      var userInputNumeric = confirm("Would you like your password to contain numbers?");
+    var userInputNumeric = confirm("Do you want your password to contain numbers?");
 
     if (userInputNumeric) {
 
       userInput = userInput.concat(numeric);
       console.log(userInputNumeric);
       
+    }
+      
+    var userInputSpecialCharacters = confirm("Do you want your password to contain any special characters?"");
+
+    if (userInputSpecialCharacters) {
+
+      userInput = userInput.concat(specialCharacters);
+      console.log(userInputSpecialCharacters);
+
     }
  //var password = generatePassword();
  var passwordText = document.querySelector("#password");
