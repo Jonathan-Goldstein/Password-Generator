@@ -10,7 +10,10 @@ var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", 
 
 // Write password to the #password input
 function writePassword() {
- var password = generatePassword();
+ 
+ var passwordLength = prompt("Please choose desired length of your password (must be between 8 and 128)");
+ 
+ //var password = generatePassword();
  var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
