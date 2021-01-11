@@ -1,6 +1,9 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
+
 // Below are the four different options/arrays that the visitor can choose to be in their password
 
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -73,8 +76,7 @@ function writePassword() {
 }
 }
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
 
 // Start working code
 // User input variables:
