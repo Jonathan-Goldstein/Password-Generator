@@ -39,7 +39,7 @@ function writePassword() {
       userInput = userInput.concat(lowerCase);
      
     }
-   
+   // Confirms if the user wants or does not want upper case characters in the password.  Concats it if the user confirms. 
     var userInputUpperCase = confirm("Do you want your password to contain upper case letters?");
 
     if (userInputUpperCase) {
@@ -47,7 +47,7 @@ function writePassword() {
       userInput = userInput.concat(upperCase);
   
     }
-      
+    // Confirms if the user wants or does not want numeric characters in the password.  Concats it if the user confirms. 
     var userInputNumeric = confirm("Do you want your password to contain numbers?");
 
     if (userInputNumeric) {
@@ -56,7 +56,7 @@ function writePassword() {
       console.log(userInputNumeric);
       
     }
-      
+    // Confirms if the user wants or does not want special characters in the password.  Concats it if the user confirms.   
     var userInputSpecialCharacters = confirm("Do you want your password to contain any special characters?");
 
     if (userInputSpecialCharacters) {
