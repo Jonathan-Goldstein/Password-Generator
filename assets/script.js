@@ -11,7 +11,12 @@ var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", 
 // Write password to the #password input
 function writePassword() {
  
- var userLength = prompt("Please choose desired length of your password (must be between 8 and 128)");
+ var userLength = parseInt(prompt("Please choose desired length of your password (must be between 8 and 128)"));
+
+ if (!userLength) {
+     alert("You need to type in a value!");
+ } else if
+ 
  
  console.log(userLength);
  
