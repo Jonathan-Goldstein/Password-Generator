@@ -9,31 +9,26 @@ var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
 
 // Write password to the #password input
-function writePassword() {
- 
- var userLength = parseInt(prompt("Please choose desired length of your password (must be between 8 and 128)"));
+// Stores the characters that the user inputs
+var userInput = [];
 
- if (!userLength) {
-     alert("You need to type in a value!");
- } else if
- 
- 
- console.log(userLength);
- 
- //prompts the user to input a length in between 8 and 128 if they enter a length that is greater or lesser than the required input
- if (userLength < 8) {
-        alert('The password must be at least 8 characters! Please input a new number.');
-        return;
-    }
-    if (userLength > 128) {
-        alert('The password must be less than 128 characters! Please input a new number.');
-        return;
-    }
-    if (userLength = isNaN) {
-        alert('That is not a valid length! Please input a number.')
-        return;
-}
- 
+
+function writePassword() {
+  
+  // Asks how long the user's password will be and then adds the password to the input
+  var userLength = prompt("Please choose desired length of your password (must be between 8 and 128)");
+
+  // Converts userLengthParseInt into an interger and checks to see if it is a valid number
+  var userLengthParseInt = parseInt(userLength);
+
+  // Makes sure that the user's input is equal to or in between 8 and 128
+  if (Number.isNaN(userLengthParseInt) || userLength < 8 || userLength > 128) {
+
+    alert("Not a valid length! Please input a number between 8 and 128.")
+    return password = "";
+
+  }
+
  //var password = generatePassword();
  var passwordText = document.querySelector("#password");
 
@@ -45,4 +40,5 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 // Start working code
-// User input variables: 
+// User input variables:
+
