@@ -15,11 +15,11 @@ function writePassword() {
  
  //prompts the user to input a length in between 8 and 128 if they enter a length that is greater or lesser than the required input
  if (length < 8) {
-        alert('The password must be at least 8 characters!');
+        alert('The password must be at least 8 characters! Please input a new number.');
         return;
     }
     if (length > 128) {
-        alert('The password must be less than 128 characters!');
+        alert('The password must be less than 128 characters! Please input a new number.');
         return;
     }
  
