@@ -24,7 +24,7 @@ function writePassword() {
         alert('The password must be less than 128 characters! Please input a new number.');
         return;
     }
-    if (userLength = isNaN) {
+    if (userLength === isNaN) {
         alert('That is not a valid length! Please input a number.')
         return;
 }
