@@ -38,7 +38,6 @@ function writePassword() {
 
       userInput = userInput.concat(lowerCase);
      
-
     }
    
     var userInputUpperCase = confirm("Do you want your password to contain upper case letters?");
@@ -47,7 +46,16 @@ function writePassword() {
 
       userInput = userInput.concat(upperCase);
   
-}
+    }
+      
+      var userInputNumeric = confirm("Would you like your password to contain numbers?");
+
+    if (userInputNumeric) {
+
+      userInput = userInput.concat(numeric);
+      console.log(userInputNumeric);
+      
+    }
  //var password = generatePassword();
  var passwordText = document.querySelector("#password");
 
