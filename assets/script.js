@@ -11,14 +11,16 @@ var symbols = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", 
 // Write password to the #password input
 function writePassword() {
  
- var length = prompt("Please choose desired length of your password (must be between 8 and 128)");
+ var userLength = prompt("Please choose desired length of your password (must be between 8 and 128)");
+ 
+ console.log(userLength):
  
  //prompts the user to input a length in between 8 and 128 if they enter a length that is greater or lesser than the required input
- if (length < 8) {
+ if (userLength < 8) {
         alert('The password must be at least 8 characters! Please input a new number.');
         return;
     }
-    if (length > 128) {
+    if (userLength > 128) {
         alert('The password must be less than 128 characters! Please input a new number.');
         return;
     }
