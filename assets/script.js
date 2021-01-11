@@ -41,7 +41,7 @@ function writePassword() {
 
     }
    
-    var userInputUpperCase = confirm("Do you want your password to contain upper case letters?"");
+    var userInputUpperCase = confirm("Do you want your password to contain upper case letters?");
 
     if (userInputUpperCase) {
 
