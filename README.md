@@ -18,3 +18,6 @@ This application runs in the browser, and features dynamically updated HTML and 
 
 https://jonathan-goldstein.github.io/Password-Generator/
 
+![plot](./assets/pics/passwordgeneratorimage.png)
+passwordgeneratorimage.png
+assets/pics/passwordgeneratorimage.png
