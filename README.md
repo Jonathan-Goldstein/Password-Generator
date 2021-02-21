@@ -20,3 +20,6 @@ https://jonathan-goldstein.github.io/Password-Generator/
 
 ![plot](./assets/pics/passwordgeneratorimage.png)
 
+## License & Copyright
+
+Licensed under the [MIT License](LICENSE).
